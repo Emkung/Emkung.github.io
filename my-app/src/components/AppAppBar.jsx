@@ -9,7 +9,8 @@ import { Toolbar,
     styled,
     createTheme, 
     ThemeProvider} from '@mui/material';
-    import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import resume from '../files/Resume.pdf';
 
 export default function AppAppBar() {
   const [open, setOpen] = React.useState(false);
@@ -36,9 +37,9 @@ export default function AppAppBar() {
             <Button variant="contained" size="large" component={Link} to={'/games'}>
               Games
             </Button>
-            {/* <Button variant="contained" size="large" component={Link} to={'/event'}>
-              Events
-            </Button> */}
+            <Button variant="contained" size="large" onClick={() => window.open(resume,"_blank") }>
+              Resume
+            </Button>
             {/* <Button variant="contained" size="large" component={Link} to={'/other'}>
               Other
             </Button> */}
