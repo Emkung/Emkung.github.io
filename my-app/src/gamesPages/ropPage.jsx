@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ImageList, ImageListItem, ImageListItemBar, Grid, Typography, Box, styled, Container} from '@mui/material';
+import { ImageList, ImageListItem, ImageListItemBar, Grid, Typography, Box, styled, Container, Button} from '@mui/material';
 import menu from '../image/game asset img/rop/assets.png';
 import screen1 from '../image/game asset img/rop/screenshots/screen1.png';
 import screen2 from '../image/game asset img/rop/screenshots/screen2.png';
@@ -24,6 +24,7 @@ const PageData =
         promo:[],
         screenshots:[screen1, screen2, screen3, screen4, screen5],
         showcase:"Frog Con (charity bundle) 2025 \n PlayNYC 2025 \n PAX East 2025 \n Game Developers Conference (GDC) 2025 \n Boston Festival of Indie Games (BFIG) 2024",
+        gamelink:"https://manny-mallea.itch.io/rites-of-purrgatory"
     }
 const StyledImgLst = styled(ImageList)(({ theme }) => ({
     flexWrap: 'nowrap',
@@ -89,8 +90,13 @@ export default function MainContent() {
         <Grid item size={{ xs: 12, sm: 6, md: 5 }}>
             <Typography variant='h4'>UI/UX</Typography>
             <Typography variant='h6'>{PageData.myWork}</Typography>
-            <Typography variant='h4'>Productions</Typography>
+            <Box sx={{ height: '25px' }} />
+            <Typography variant='h4'>Production</Typography>
             <Typography variant='h6'>{PageData.productions}</Typography>
+            <Box sx={{ height: '25px' }} />
+            <Button variant="contained" size="large" onClick={()=> window.open(PageData.gamelink, "_blank")}>
+              Play The Game
+            </Button>
         </Grid>
         <Grid item size={{ xs: 12, sm: 6, md: 7 }} sx={{display:"flex", alignItems: "center"}}>
           <StyledDiv>
@@ -108,7 +114,7 @@ export default function MainContent() {
       
       <StyledDiv>
         <Box sx={{
-          background: '#b0c8b8',
+          background: '#E1BD78',
           width: "100%",
           position: "absolute",
           boxSizing: "border-box"

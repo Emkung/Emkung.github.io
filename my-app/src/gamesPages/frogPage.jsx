@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ImageList, ImageListItem, ImageListItemBar, Grid, Typography, Box, styled, Container} from '@mui/material';
+import { ImageList, ImageListItem, ImageListItemBar, Grid, Typography, Box, styled, Container, Button} from '@mui/material';
 import menu from '../image/game asset img/frog/frog3.png';
 import mode from '../image/game asset img/frog/frog2.png';
 import gmplay from '../image/game asset img/frog/frog4.png';
@@ -31,6 +31,7 @@ const PageData =
         vids:['https://youtu.be/SJQMZu2K6cQ?si=Ncs77j80ukgsq2fN','https://youtu.be/RfK-5tOTJ88?si=6pHDVaMQgUjS41FC'],
         showcase:"Frog Con (charity bundle) 2025 \n PlayNYC 2025 \n PAX East 2025 \n Game Developers Conference (GDC) 2025 \n Boston Festival of Indie Games (BFIG) 2024",
         acolades:"This game was chosen as a Showcase Game for the 2024 Boston Festival of Indie Games and was awarded Best Design at the  Northeastern University Games Showcase. Frogmageddon was also played by Vinny Vinesauce after showcasing at PAX East 2024. It also was ranked \#60 / 7,605 for Enjoyment and \#263 / 7,605 Overall in GMTK 2024.",
+        gamelink:"https://store.steampowered.com/app/3201190/Frogmageddon/"
     }
 const StyledImgLst = styled(ImageList)(({ theme }) => ({
     flexWrap: 'nowrap',
@@ -105,10 +106,16 @@ export default function MainContent() {
         <Grid item size={{ xs: 12, sm: 6, md: 5 }}>
             <Typography variant='h4'>UI/UX</Typography>
             <Typography variant='h6'>{PageData.myWork}</Typography>
-            <Typography variant='h4'>Productions</Typography>
+            <Box sx={{ height: '25px' }} />
+            <Typography variant='h4'>Production</Typography>
             <Typography variant='h6'>{PageData.productions}</Typography>
+            <Box sx={{ height: '25px' }} />
             <Typography variant='h4'>Accolades</Typography>
             <Typography variant='h6'>{PageData.acolades}</Typography>
+            <Box sx={{ height: '25px' }} />
+            <Button variant="contained" size="large" onClick={()=> window.open(PageData.gamelink, "_blank")}>
+              Play The Game
+            </Button>
         </Grid>
         <Grid item size={{ xs: 12, sm: 6, md: 7 }} sx={{display:"flex", alignItems: "center"}}>
           <StyledDiv>
@@ -121,13 +128,16 @@ export default function MainContent() {
           </StyledImgLst >
           </StyledDiv>
         </Grid>
-        <YouTube videoId="SJQMZu2K6cQ" options={vidOptions} id="video"/>
+        <Box sx={{ height: '50px' }}/>
+        <Box sx={{ width:'100%' }} display="flex" justifyContent="center" alignItems="center">
+            <YouTube videoId="SJQMZu2K6cQ" options={vidOptions} id="video"/>
+        </Box>
       </Grid>
       </Container>
       
       <StyledDiv>
         <Box sx={{
-          background: '#b0c8b8',
+          background: '#E1BD78',
           width: "100%",
           position: "absolute",
           boxSizing: "border-box"

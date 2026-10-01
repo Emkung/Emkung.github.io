@@ -131,6 +131,7 @@ export default function MainContent() {
       <Grid container spacing={2} columns={12}>
         {genGameCards(cardData)}
       </Grid>
+      <Box sx={{ height: '35px' }}/>
       <Typography style={{fontFamily:"DM Serif Display"}} variant='h3'color='#090823'>Other Games</Typography>
         <Grid container spacing={2} columns={12}>
         {genGameCards(jamCardData)}

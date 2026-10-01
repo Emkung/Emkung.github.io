@@ -37,7 +37,7 @@ class App extends Component {
     return (
       <ThemeProvider theme={theme}>
         <AppAppBar/>
-        <Box sx={{ height: '100vh', backgroundColor: '#FEFBE2'}}>
+        <Box sx={{ height: '100%', backgroundColor: '#FEFBE2'}}>
           <Routes>
             <Route path="/" element={<MainContent />} />
             <Route path="/games" element={<GamesPage />}/>

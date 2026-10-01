@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ImageList, ImageListItem, ImageListItemBar, Grid, Typography, Box, styled, Container} from '@mui/material';
+import { ImageList, ImageListItem, ImageListItemBar, Grid, Typography, Box, styled, Container, Button} from '@mui/material';
 import menu from '../image/game asset img/npip/assets/asset1.png';
 import screen1 from '../image/game asset img/cmccc/screenshots/screen1.png';
 import screen2 from '../image/game asset img/cmccc/screenshots/screen2.png';
@@ -24,6 +24,7 @@ const PageData =
         promo:[],
         screenshots:[screen1, screen2, screen3, screen4],
         showcase:"",
+        gamelink:"https://marytheproducer.itch.io/count-my-coins-coin-counter"
     }
 const StyledImgLst = styled(ImageList)(({ theme }) => ({
     flexWrap: 'nowrap',
@@ -89,8 +90,13 @@ export default function MainContent() {
         <Grid item size={{ xs: 12, sm: 6, md: 5 }}>
             <Typography variant='h4'>Art</Typography>
             <Typography variant='h6'>{PageData.myWork}</Typography>
+            <Box sx={{ height: '25px' }} />
             <Typography variant='h4'>Accolades</Typography>
             <Typography variant='h6'>{PageData.accolades}</Typography>
+            <Box sx={{ height: '25px' }} />
+            <Button variant="contained" size="large" onClick={()=> window.open(PageData.gamelink, "_blank")}>
+              Play The Game
+            </Button>
             {/* <Typography variant='h4'>Productions</Typography>
             <Typography variant='h6'>{PageData.productions}</Typography> */}
         </Grid>

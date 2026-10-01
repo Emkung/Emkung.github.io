@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Typography, Grid, Box, CardActionArea, Container } from '@mui/material';
+import {Typography, Grid, Box, CardActionArea, Container, Stack } from '@mui/material';
 import rop from '../image/rop.png';
 import frog from '../image/frog.png';
 import npip from '../image/npip.png';
@@ -7,6 +7,8 @@ import gameloop from '../image/Gameloop.png';
 import myname from '../image/myname.png';
 import photo from '../image/photo.png';
 import lilguys from '../image/lilguys.png';
+import email from '../image/email.png';
+import link from '../image/link.png';
 import {StyledCard, StyledCardContent, StyledCardMedia, StyledTypography} from '../styles/styles';
 import {Link} from 'react-router-dom';
 
@@ -117,6 +119,10 @@ export default function MainContent() {
               <Typography variant="h5" gutterBottom style={{ padding: '20px' }} color='#090823' >I am Lan Kung, a 2D game artist and a community manager. Within my art practices, I mostly focus working as an UI/UX Artist. I eagerly bridge the gaps of communication between not just the developers and players, but also between members in my multi-disciplined teams.
                 I am also a Community Manager, I founded the IGDA Chapter in Smith College and has been organizing events in Boston focused on supporting the Game Developer community in Boston. 
               </Typography>
+              <Stack direction="row" spacing={2}>
+                  <img style={{ width: '50px', cursor: 'pointer' }} src={link} onClick={()=> window.open("https://www.linkedin.com/in/lan-kung", "_blank")}/>
+                  <img style={{ width: '50px', cursor: 'pointer' }}  src={email} onClick={()=> window.open("mailto:hsiaolankung@gmail.com", "_blank")}/>
+              </Stack>
             </Grid>
           </Grid>
         </Container>
