@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e6c13ad2.css",
+    "main.js": "/static/js/main.c594c866.js",
+    "static/js/453.453f2ef2.chunk.js": "/static/js/453.453f2ef2.chunk.js",
+    "static/media/rop.png": "/static/media/rop.9062a18960b60ffcc43b.png",
+    "static/media/screen4.png": "/static/media/screen4.e9843f47ce53a5c285fa.png",
+    "static/media/screen1.png": "/static/media/screen1.eaad4cf498dc69393c6e.png",
+    "static/media/screen6.png": "/static/media/screen6.f4020f78f3707fd502d8.png",
+    "static/media/screen7.png": "/static/media/screen7.d89a20797e1764013c8f.png",
+    "static/media/Gameloop.png": "/static/media/Gameloop.31883b2307b76f3b0183.png",
+    "static/media/screen2.png": "/static/media/screen2.77b9727a928c92863801.png",
+    "static/media/screen3.png": "/static/media/screen3.aba951f6d05e1441a421.png",
+    "static/media/lilguys.png": "/static/media/lilguys.c81c4e9709cad9d37735.png",
+    "static/media/screen5.png": "/static/media/screen5.549a9f82b0cd075abe83.png",
+    "static/media/assets.png": "/static/media/assets.b8b41588fb75df5a039b.png",
+    "static/media/npip.png": "/static/media/npip.0d20a91dd5312913bf84.png",
+    "static/media/frog4.png": "/static/media/frog4.45d522b74959a09f2fed.png",
+    "static/media/frog.png": "/static/media/frog.0faefda50a126c076bdf.png",
+    "static/media/asset1.png": "/static/media/asset1.1b299e81c8d61bd1c8f4.png",
+    "static/media/frog3.png": "/static/media/frog3.7db0e7354c538e190756.png",
+    "static/media/photo.png": "/static/media/photo.660167dd72e64d6ead89.png",
+    "static/media/myname.png": "/static/media/myname.5c7689c83e5f64b85465.png",
+    "static/media/frog2.png": "/static/media/frog2.9ea184fc7ae982395f8f.png",
+    "static/media/gpop.png": "/static/media/gpop.4f76471b827b5d6322a4.png",
+    "static/media/gap.png": "/static/media/gap.ab1877d73088efe39b06.png",
+    "static/media/cmccc.png": "/static/media/cmccc.a6cec769f2bb6f54e3f9.png",
+    "static/media/frog1.png": "/static/media/frog1.0718e92e5dbabcef9cc1.png",
+    "static/media/link.png": "/static/media/link.ad45c71fa8b0891f06c0.png",
+    "static/media/email.png": "/static/media/email.50348e3e1b10ffce84de.png",
+    "static/media/Resume.pdf": "/static/media/Resume.7ef88a26b3f808952792.pdf",
+    "static/media/fright.png": "/static/media/fright.d3acc61417eae91262f0.png",
+    "index.html": "/index.html",
+    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
+    "main.c594c866.js.map": "/static/js/main.c594c866.js.map",
+    "453.453f2ef2.chunk.js.map": "/static/js/453.453f2ef2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.c594c866.js"
+  ]
+}
